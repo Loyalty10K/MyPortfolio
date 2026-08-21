@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loyalty10K — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF9F6;
+    --bg-alt:#F1EFE9;
+    --text:#1C1B18;
+    --text-dim:#5B5952;
+    --line:#D8D4C9;
+    --accent:#8A3B2B;
+    --serif:'Source Serif 4', Georgia, serif;
+    --mono:'IBM Plex Mono', Consolas, monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--serif);
+    font-size:17px;
+    line-height:1.65;
+  }
+  a{color:var(--accent);}
+  ::selection{background:#8A3B2B22;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header{
+    border-bottom:1px solid var(--line);
+    padding:64px 0 40px;
+  }
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--text-dim); margin-bottom:14px;
+  }
+  h1{
+    font-size:38px; font-weight:700; margin-bottom:10px;
+  }
+  .role{
+    font-size:18px; color:var(--text-dim); margin-bottom:20px;
+  }
+  .meta-row{
+    display:flex; gap:18px; flex-wrap:wrap;
+    font-family:var(--mono); font-size:13px; color:var(--text-dim);
+  }
+  .meta-row span{border-left:2px solid var(--accent); padding-left:8px;}
+  .meta-row span:first-child{border-left:none; padding-left:0;}
+
+  nav{
+    display:flex; gap:24px; padding:16px 0;
+    font-family:var(--mono); font-size:13px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:8px;
+  }
+  nav a{color:var(--text-dim);}
+  nav a:hover{color:var(--accent);}
+
+  section{padding:48px 0; border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+
+  h2{
+    font-family:var(--mono); font-size:13px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:22px;
+  }
+
+  /* about */
+  .about p{max-width:640px; color:var(--text);}
+  .about p + p{margin-top:14px;}
+
+  /* skills */
+  .skill-list{display:grid; grid-template-columns:1fr 1fr; gap:24px 40px;}
+  .skill-group h3{
+    font-size:15px; font-weight:600; margin-bottom:8px;
+  }
+  .skill-group p{
+    font-family:var(--mono); font-size:14px; color:var(--text-dim);
+  }
+
+  /* experience */
+  .job{padding:20px 0; border-top:1px solid var(--line);}
+  .job:first-child{border-top:none; padding-top:0;}
+  .job-head{
+    display:flex; justify-content:space-between; align-items:baseline;
+    flex-wrap:wrap; gap:6px 16px; margin-bottom:6px;
+  }
+  .job-title{font-size:18px; font-weight:600;}
+  .job-time{font-family:var(--mono); font-size:13px; color:var(--text-dim);}
+  .job-desc{color:var(--text-dim); font-size:15.5px; max-width:600px;}
+  .job-stack{
+    font-family:var(--mono); font-size:12.5px; color:var(--accent);
+    margin-top:8px;
+  }
+
+  /* projects */
+  .project{padding:18px 0; border-top:1px solid var(--line);}
+  .project:first-child{border-top:none; padding-top:0;}
+  .project-name{font-size:17px; font-weight:600; margin-bottom:4px;}
+  .project-name .file{
+    font-family:var(--mono); font-weight:400; font-size:13px; color:var(--text-dim);
+    margin-left:8px;
+  }
+  .project-desc{color:var(--text-dim); font-size:15px;}
+
+  /* contact */
+  .contact-list{font-family:var(--mono); font-size:15px;}
+  .contact-list div{padding:6px 0; display:flex; gap:10px;}
+  .contact-list .k{color:var(--text-dim); width:80px; flex-shrink:0;}
+
+  footer{
+    padding:32px 0 64px; font-family:var(--mono); font-size:12px; color:var(--text-dim);
+  }
+
+  @media (max-width:600px){
+    header{padding:44px 0 30px;}
+    h1{font-size:30px;}
+    .skill-list{grid-template-columns:1fr;}
+    nav{overflow-x:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Developer Portfolio</div>
+    <h1>Loyalty10K</h1>
+    <p class="role">Minecraft Server Developer &amp; Manager — plugins, ops &amp; community</p>
+    <div class="meta-row">
+      <span>5+ years experience</span>
+      <span>Java · Python · JS · YAML</span>
+      <span>Available for work</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>I build and run Minecraft servers end to end — Paper/Spigot setup, custom plugins in Java, and the day-to-day operations that keep a server stable once players show up. That covers everything from land claims and economy systems to permissions, moderation tooling, and performance tuning under real load.</p>
+    <p>I've also managed the community side: staff structure, player onboarding, and keeping a server active and healthy rather than just technically running. I work in Java for plugin development, Python for automation, and YAML for the configuration layer that ties it all together.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>Java, Python, JavaScript, YAML, Skript</p>
+      </div>
+      <div class="skill-group">
+        <h3>Minecraft</h3>
+        <p>Paper/Spigot plugins, Maven builds, TAB, DeluxeHub, land claims</p>
+      </div>
+      <div class="skill-group">
+        <h3>Server &amp; Infrastructure</h3>
+        <p>Setup, config tuning, performance, uptime, deployment</p>
+      </div>
+      <div class="skill-group">
+        <h3>Community &amp; Ops</h3>
+        <p>Staff management, moderation, onboarding, player retention</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Minecraft Plugin Developer</div>
+        <div class="job-time">2026 — present</div>
+      </div>
+      <div class="job-desc">Writing custom Paper plugins from scratch — homes, warps, TPA, land claims, kits, action logging — and load-testing them to make sure they hold up under real player counts.</div>
+      <div class="job-stack">Java 21 · Maven · Paper API</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Server Setup &amp; Configuration</div>
+        <div class="job-time">2021 — 2024</div>
+      </div>
+      <div class="job-desc">Setting up servers from scratch, tuning scoreboard/join events/hub systems, and writing config that avoids common issues before they happen.</div>
+      <div class="job-stack">YAML · Config · Optimization</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Community &amp; Server Management</div>
+        <div class="job-time">2021</div>
+      </div>
+      <div class="job-desc">Ran day-to-day operations on a live server — staff coordination, moderation, and keeping the player base active and engaged.</div>
+      <div class="job-stack">Discord · Moderation · Staff Ops</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <div class="project-name">CrimsonCore <span class="file">CrimsonCore.jar</span></div>
+      <div class="project-desc">Full-featured Paper plugin built from scratch — homes, warps, TPA, land claims, kits, and action logging.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">LoadStorm <span class="file">LoadStorm.jar</span></div>
+      <div class="project-desc">Server stress-testing plugin with custom intensity scaling, backpressure controls, and benchmark mode.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Simple SMP &amp;<span class="file">SimpleSMP.jar</span></div>
+      <div class="project-desc">Core plugin and configuration for a survival multiplayer server — gameplay tweaks, permissions, and setup built for a smooth player experience.</div> 
+    </div>
+
+    <div class="project">
+      <div class="project-name">NitroSMP <span class="file">NitroSMPFFA.jar</span></div>
+      <div class="project-desc">FFA plugin built for NitroSMP — combat, loot, and arena logic tuned for fast-paced free-for-all gameplay.</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-list">
+      <div><span class="k">discord</span> loyalty10k</div>
+      <div><span class="k">email</span> <a href="mailto:loyalty.business.10k@gmail.com">loyalty.business.10k@gmail.com</a></div>
+      <div><span class="k">github</span> <a href="https://github.com/loyalty10k">github.com/loyalty10k</a></div>
+    </div>
+  </section>
+
+
+</div>
+
+</body>
+</html>
