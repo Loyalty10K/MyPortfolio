@@ -1,4 +1,4 @@
-# Loyalty10K Developer Portfolio
+# xyzlaki Developer Portfolio
 
 A single-file developer portfolio site. No build step, no dependencies just open `index.html` or deploy it as-is.
 
