@@ -4,7 +4,7 @@ A single-file developer portfolio site. No build step, no dependencies just open
 
 ## About
 
-Personal portfolio for Loyalty10K, showcasing Minecraft server development and management work plugins, server ops, and community management.
+Personal portfolio for xyzlaki, showcasing Minecraft server development and management work plugins, server ops, and community management.
 
 ## Stack
 
@@ -25,7 +25,7 @@ Personal portfolio for Loyalty10K, showcasing Minecraft server development and m
 Just open `index.html` in a browser no server or build tools required.
 
 ```bash
-git clone https://github.com/loyalty10k/portfolio.git
+git clone https://github.com/xyzlaki/portfolio.git
 cd portfolio
 open index.html
 ```
